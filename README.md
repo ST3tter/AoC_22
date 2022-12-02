@@ -8,4 +8,4 @@ Advent of Code repo for the year 2022
 or  
 **Build and watch Typescript**: `npm run build:watch`  
 then  
-**Run code for a day e.g. 01**: `npm run 01`
+**Run code for a day e.g. Day 1**: `npm run 1`
