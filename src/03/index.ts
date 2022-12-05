@@ -38,4 +38,29 @@ const matchingChars = rucksackStrings.map((rucksack) => {
 /* Calculate the sum of every character value */
 const sum = matchingChars.reduce((acc, current) => acc + getValueForChar(current), 0);
 
-console.log('The sum of all priorities is:', sum);
+console.log('Part 1: The sum of all priorities is:', sum);
+
+/* ------- PART 2 ------- */
+
+/* make groups of three */
+const chunks: string[][] = [];
+for (let i = 0; i < rucksackStrings.length; i += 3) {
+  const chunk = rucksackStrings.slice(i, i + 3);
+  chunks.push(chunk);
+}
+
+const matchArray = chunks.map((chunk) => {
+  /*  Search the matching chars */
+  for (let char of chunk[0]) {
+    if (chunk[1].includes(char) && chunk[2].includes(char)) {
+      return char;
+    }
+  }
+  /* Throw an error if a rucksack does not contain a matching character pair */
+  throw new Error(`No matching characters found in rucksack ${chunk}`);
+});
+
+/* Calculate the sum of the types values */
+const typeSum = matchArray.reduce((acc, current) => acc + getValueForChar(current), 0);
+
+console.log('Part 2: The sum of all types is:', typeSum);

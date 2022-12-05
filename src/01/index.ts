@@ -17,4 +17,14 @@ const elfCalories = elfStrings.map((elfString) => {
 /* Find the biggest sum */
 const maxCalories = Math.max(...elfCalories);
 
-console.log('Max calories:', maxCalories);
+console.log('Part 1: Max calories:', maxCalories);
+
+/* ------- PART 2 ------- */
+
+/* Get the top three calories */
+const topThree = elfCalories.sort((a, b) => b - a).slice(0, 3);
+
+/* Calculate the sum uf the top three */
+const topThreeSum = topThree.reduce((acc, current) => acc + current, 0);
+
+console.log('Part 2: Sum of the top three:', topThreeSum);
