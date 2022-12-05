@@ -7,7 +7,7 @@ Advent of Code repo for the year 2022, written in TypeScript.
 Needs [Node.js](https://nodejs.org/en/) and npm installed.
 
 **Install**: `npm i`  
-then
+then  
 **Build Typescript**: `npm run build`  
 or  
 **Build Typescript and watch for changes**: `npm run build:watch`  
