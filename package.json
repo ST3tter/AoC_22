@@ -1,15 +1,15 @@
 {
-  "name": "aoc",
+  "name": "aoc22_st3tter",
   "version": "1.0.0",
-  "description": "",
+  "description": "Advent of Code repo for the year 2022",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "1": "node dist/01/index.js",
-    "2": "node dist/02/index.js",
-    "3": "node dist/03/index.js",
-    "4": "node dist/04/index.js",
-    "5": "node dist/05/index.js",
+    "1": "node dist/day01/index.js",
+    "2": "node dist/day02/index.js",
+    "3": "node dist/day03/index.js",
+    "4": "node dist/day04/index.js",
+    "5": "node dist/day05/index.js",
     "build": "tsc",
     "build:watch": "tsc -w"
   },

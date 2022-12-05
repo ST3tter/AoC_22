@@ -1,8 +1,10 @@
 # AoC_22
 
-Advent of Code repo for the year 2022
+Advent of Code repo for the year 2022, written in TypeScript.
 
 # Run
+
+Needs [Node.js](https://nodejs.org/en/) and npm installed.
 
 **Install**: `npm i`  
 then
