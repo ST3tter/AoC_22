@@ -21,6 +21,7 @@ enum Direction {
 const head = { x: 0, y: 0 };
 const tail = { x: 0, y: 0, direction: Direction.COVER };
 
+/* Array to hold all visited positions of the tail */
 const tailPos: string[] = [];
 
 /* Function to move the head */
@@ -220,6 +221,7 @@ const moveTail = (direction: string) => {
       }
       break;
   }
+  /* Update the tail position array if the position is new */
   if (!tailPos.includes(`x:${tail.x}y:${tail.y}`)) {
     tailPos.push(`x:${tail.x}y:${tail.y}`);
   }
@@ -230,8 +232,5 @@ moves.forEach((move) => {
   moveHead(move.direction, move.distance);
 });
 
+/* The tail visited tailPos.length positions */
 console.log('Part 1: The tail visited', tailPos.length, 'positions');
-
-/* ------- PART 2 ------- */
-
-console.log('Part 2: :');

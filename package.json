@@ -13,7 +13,7 @@
     "6": "node dist/day06/index.js",
     "7": "node dist/day07/index.js",
     "8": "node dist/day08/index.js",
-    "9": "node dist/day09/index.js",
+    "9": "node dist/day09/part1.js && node dist/day09/part2.js",
     "build": "tsc",
     "build:watch": "tsc -w"
   },
