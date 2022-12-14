@@ -18,6 +18,7 @@
     "11": "node dist/day11/index.js",
     "12": "node dist/day12/index.js",
     "13": "node dist/day13/index.js",
+    "14": "node dist/day14/index.js",
     "build": "tsc",
     "build:watch": "tsc -w"
   },
